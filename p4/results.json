@@ -1,0 +1,66 @@
+{
+  "score": 85.0,
+  "tests": [
+    {
+      "test": "has_pages",
+      "points": 9,
+      "possible": 9
+    },
+    {
+      "test": "has_links",
+      "points": 6,
+      "possible": 6
+    },
+    {
+      "test": "browse",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "rate",
+      "points": 5,
+      "possible": 5
+    },
+    {
+      "test": "ab_testing",
+      "points": 25,
+      "possible": 25
+    },
+    {
+      "test": "edgar_utils",
+      "points": 20.0,
+      "possible": 20
+    },
+    {
+      "test": "analysis",
+      "points": 0,
+      "possible": 15,
+      "log": [
+        "========================================",
+        "TEST analysis (15)",
+        "",
+        " {'54.152.17.ccg': 12562, '183.195.251.hah': 6524, '52.45.218.ihf': 5562, '68.180.231.abf': 5493, '204.212.175.bch': 4708, '103.238.106.gif': 4428, '208.77.215.jeh': 3903, '208.77.214.jeh': 3806, '217.174.255.dgd': 3551, '82.13.163.caf': 3527} ",
+        "",
+        "",
+        " {2834: 40, 6022: 20, 1311: 20, 6798: 20, 6021: 20, 1389: 19, 6189: 17, 6211: 17, 2836: 13, 7389: 11} ",
+        "",
+        "Traceback (most recent call last):",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 123, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 486, in analysis",
+        "    assert student_solution == expected_df.at[i, \"expected\"]",
+        "AssertionError",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "dashboard",
+      "points": 10,
+      "possible": 10
+    }
+  ],
+  "lint": [],
+  "date": "11/18/2023",
+  "latency": 23.404089212417603
+}

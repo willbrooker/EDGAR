@@ -1,0 +1,98 @@
+{
+  "score": 54.4,
+  "tests": [
+    {
+      "test": "has_pages",
+      "points": 9,
+      "possible": 9
+    },
+    {
+      "test": "has_links",
+      "points": 0,
+      "possible": 6,
+      "log": [
+        "========================================",
+        "TEST has_links (6)",
+        "no hyperlink to browse.html found on home page",
+        "no hyperlink to donate.html found on home page",
+        "no hyperlink to analysis.html found on home page",
+        ""
+      ]
+    },
+    {
+      "test": "browse",
+      "points": 10,
+      "possible": 10
+    },
+    {
+      "test": "rate",
+      "points": 0,
+      "possible": 5,
+      "log": [
+        "========================================",
+        "TEST rate (5)",
+        "Traceback (most recent call last):",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 123, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 363, in rate",
+        "    assert status == \"429 TOO MANY REQUESTS\"",
+        "AssertionError",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "ab_testing",
+      "points": 25,
+      "possible": 25
+    },
+    {
+      "test": "edgar_utils",
+      "points": 10.380952380952381,
+      "possible": 20,
+      "log": [
+        "========================================",
+        "TEST edgar_utils (20)",
+        "['Error found in Filing (path 850693/0000850693-07-000159/-index.htm): actual value of sic was [2834] but expected 2834', \"Error found in Filing (path 850693/0000850693-07-000159/-index.htm): actual value of addresses was ['P.O. BOX 19534', '2525 DUPONT DRIVE 7142464500', '2525 DUPONT DR', ''] but expected ['P.O. BOX 19534 IRVINE CA 92713-9534', '2525 DUPONT DRIVE IRVINE CA 92612 7142464500', '2525 DUPONT DR IRVINE CA 92612']\", 'Traceback (most recent call last):\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 230, in run_test\\n    test()\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 220, in filing_test\\n    test_filing_attribute(\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 185, in test_filing_attribute\\n    score, first_error = compare_lists(actual_values, expected_values)\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 34, in compare_lists\\n    for i, (act, exp) in enumerate(zip(actual, expected)):\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 181, in <genexpr>\\n    call_if_function(getattr(filings[k], attribute))\\n  File \"/home/willbrooker/CS320-FA23/p4/module_tester.py\", line 172, in <lambda>\\n    call_if_function = lambda x: x() if function else x\\n  File \"/home/willbrooker/CS320-FA23/p4/edgar_utils.py\", line 50, in state\\n    j.append(re.findall(r\"([A-Z]{2}) [0-9]{5}\", n)[0])\\nIndexError: list index out of range\\n']",
+        ""
+      ]
+    },
+    {
+      "test": "analysis",
+      "points": 0,
+      "possible": 15,
+      "log": [
+        "========================================",
+        "TEST analysis (15)",
+        "Traceback (most recent call last):",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 123, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 484, in analysis",
+        "    assert student_solution == expected_df.at[i, \"expected\"]",
+        "AssertionError",
+        "",
+        ""
+      ]
+    },
+    {
+      "test": "dashboard",
+      "points": 0,
+      "possible": 10,
+      "log": [
+        "========================================",
+        "TEST dashboard (10)",
+        "Traceback (most recent call last):",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 123, in run_all_tests",
+        "    points = t.fn()",
+        "  File \"/home/willbrooker/CS320-FA23/p4/tester.py\", line 513, in dashboard",
+        "    with open(\"dashboard.svg\", \"rb\") as f:",
+        "FileNotFoundError: [Errno 2] No such file or directory: 'dashboard.svg'",
+        "",
+        ""
+      ]
+    }
+  ],
+  "lint": [],
+  "date": "11/18/2023",
+  "latency": 32.503398418426514
+}
